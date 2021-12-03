@@ -26,11 +26,11 @@ def main():
     s3_config = config['s3']
     # Creating the S3BucketConnector class instances for source and target
     s3_bucket_src = S3BucketConnector(access_key=s3_config['access_key'],
-                                        secrect_key=s3_config['secrect_key'],
+                                        secret_key=s3_config['secret_key'],
                                         endpoint_url=s3_config['src_endpoint_url'],
                                         bucket=s3_config['src_bucket'])
     s3_bucket_trg = S3BucketConnector(access_key=s3_config['access_key'],
-                                        secrect_key=s3_config['secrect_key'],
+                                        secret_key=s3_config['secret_key'],
                                         endpoint_url=s3_config['trg_endpoint_url'],
                                         bucket=s3_config['trg_bucket'])
     # Reading source configuration
